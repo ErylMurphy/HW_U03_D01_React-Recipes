@@ -5,7 +5,7 @@ class Header extends Component {
     return <div className="recipe-header">
     <h1>{this.props.title}</h1>
     <h2>{this.props.name}</h2>
-    <p>{this.props.source}</p>
+    <a>{this.props.source}</a>
     </div>
   }
 }

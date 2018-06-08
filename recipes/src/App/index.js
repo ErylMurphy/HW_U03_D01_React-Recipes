@@ -14,26 +14,22 @@ class App extends Component {
     return (
       <div className="flex-container">
         <div className="recipe-header">
-          {recipes.map((recipe) => {
-            return <Header
+            <Header
               title={recipe.title}
               name={recipe.byline.name}
               source={recipe.byline.source} />
-          })}
         </div>
 
         <div className = "prep">
-        {recipes.map((recipe) => {
-          return <Prep
+           <Prep
           ingredients = {recipe.ingredients}
           preparation = {recipe.preparation}
           activePrep = {recipe.activePrep}
           totalPrep = {recipe.totalPrep}
           servings = {recipe.servings}
           img = {recipe.img} />
-        })}
         </div>
-        return <Footer />
+       <Footer />
       </div>
     );
   }
