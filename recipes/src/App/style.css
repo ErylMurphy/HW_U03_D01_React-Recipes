@@ -5,6 +5,11 @@ body {
 #recipe_meta_data {
   border: 1px solid black;
 }
+
+#recipe_meta_data ul {
+  list-style-type: none;
+}
+
 #food_image {
   float: right;
   padding: 10px;
